@@ -10,3 +10,7 @@
 
 -Later after finalising the dataset ,i will upload the dataset as well.
 
+More info:
+
+-NLTK is a popular Python library which is used for NLP.
+-Python NLTK library.
