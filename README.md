@@ -1,5 +1,5 @@
 # NLP-Natural-Language-Processsing-Implementation
-<added a new doc about NLP, this doc will get updated based the implementation hopefully...:) > 
+
 NLP implemenatation using python 
 
 -jypter notebook is used for coding throughout the implementation
@@ -14,3 +14,6 @@ More info:
 
 -NLTK is a popular Python library which is used for NLP.
 -Python NLTK library.
+
+<TODO List>
+  <added a new doc about NLP, this doc will get updated based the implementation hopefully...:) > 
