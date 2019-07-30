@@ -1,6 +1,6 @@
 # NLP-Natural-Language-Processsing-Implementation
-
--NLP implemenatation using python 
+<added a new doc about NLP, this doc will get updated based the implementation hopefully...:) > 
+NLP implemenatation using python 
 
 -jypter notebook is used for coding throughout the implementation
 
