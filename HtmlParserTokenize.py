@@ -66,3 +66,20 @@ text = soup.get_text(strip=True)
 tokens = [t for t in text.split()] 
 #print (tokens)
 
+# In [10]
+### Convert that text into tokens and Count Word Frequency by FreqDist
+#### Written  on 31-Jul-2019
+
+from bs4 import BeautifulSoup
+import urllib.request
+import nltk 
+response = urllib.request.urlopen('file:///C:/reut2-002.html') 
+html = response.read() 
+soup = BeautifulSoup(html,"html5lib") 
+text = soup.get_text(strip=True) 
+tokens = [t for t in text.split()] 
+freq = nltk.FreqDist(tokens) 
+for key,val in freq.items(): 
+ print (str(key) + ':' + str(val))
+
+
