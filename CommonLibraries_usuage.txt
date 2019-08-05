@@ -1,0 +1,26 @@
+Beautiful Soup is a Python library for pulling data out of HTML and XML files. 
+Using this library, we can search for the values of html tags and get specific data like title of the page and the list of headers in the page.
+Install Beautifulsoup
+Use the Anaconda package manager to install the required package and its dependent packages.
+conda install Beaustifulsoap
+We first have to import the library, and create an instance of the BeautifulSoup class to parse our document:
+Then use the html parser parameter to read the entire html file. 
+---------
+>>from bs4
+>>import BeautifulSoup
+>>soup = BeautifulSoup(page.content, 'html.parser')
+--------
+Requests 
+The requests library will make a GET request to a web server, which will download the HTML contents of a given web page for us. There are several different types of requests we can make using requests.
+One of the most common HTTP methods is GET. The GET method indicates that you’re trying to get or retrieve data from a specified resource. To make a GET request, invoke requests.get().
+Other popular HTTP methods include POST, PUT, DELETE, HEAD, PATCH, and OPTIONS.
+
+urllib
+urllib is a Python module that can be used for opening URLs. It defines functions and classes to help in URL actions.
+>>urlopen
+
+This function is capable of fetching URLs using a variety of different protocols
+(HTTP, FTP, ...)   Just pass the URL to urlopen() to get a "file-like" handle to the remote data.
+
+Additionaly, urllib2 offers an interface for handling common situations -like basic authentication, cookies, proxies and so on. These are provided by objects called handlers and openers.
+
