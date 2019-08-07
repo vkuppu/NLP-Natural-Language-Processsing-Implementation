@@ -108,3 +108,33 @@ for w in words:
             appendFile.write(" "+w) 
             appendFile.close() 
 
+#In [11]
+#### Removing the digits from the Filtered Text
+
+from bs4 import BeautifulSoup
+import urllib.request
+import nltk 
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+# Removing numeric digits from string using translate 
+from string import digits 
+#word_tokenize accepts a string as an input, not a file. 
+stop_words = set(stopwords.words('english')) 
+
+response = urllib.request.urlopen('file:///C:/reut2-002.html') 
+
+
+
+html = response.read() 
+soup = BeautifulSoup(html,"html5lib") 
+
+text = soup.get_text(strip=True) 
+words=word_tokenize(text)
+# to remove numeric digits from string 
+remove_digits = str.maketrans('', '', digits) 
+
+
+for w in words:
+        if not w in stop_words: 
+            res =words.translate(remove_digits)
+            print (res)
